@@ -1,19 +1,19 @@
 # Memory Lane NYT Headlines Project
 
-This project fetches **New York Times headlines** for any date, ranks them by importance, and presents the **Top 10 headlines** in multiple ways:  
-- Inside Jupyter Notebook  
-- Downloadable as CSV  
-- Accessible via a REST API using FastAPI  
+This project fetches New York Times headlines for any date, ranks them by importance, and presents the Top 10 headlines in multiple ways:
+- Inside Jupyter Notebook
+- Downloadable as CSV
+- Accessible via a REST API using FastAPI
 
 ---
 
 ## Project Overview
 
-### Part 1: Fetch & Rank Headlines
-- Retrieves articles from the **New York Times Archive API**  
+### Part 1: Fetch and Rank Headlines
+- Retrieves articles from the New York Times Archive API  
 - Filters results for a chosen date  
 - Ranks articles by section (World, U.S., Business, etc.) and article type (News, Front Page)  
-- Displays the **Top 10 headlines** in a clear format  
+- Displays the Top 10 headlines in a clear format  
 
 ---
 
@@ -29,7 +29,7 @@ This project fetches **New York Times headlines** for any date, ranks them by im
   ```
   http://127.0.0.1:8000/headlines?date=YYYY-MM-DD&limit=10
   ```
-  *(Replace `YYYY-MM-DD` with any date you want)*  
+  (Replace `YYYY-MM-DD` with any date you want)  
 - Built-in interactive docs available at:  
   ```
   http://127.0.0.1:8000/docs
@@ -45,17 +45,21 @@ pip install fastapi uvicorn requests python-dateutil nest_asyncio python-dotenv
 ```
 
 ### 2. Get a New York Times API key
-Sign up at:  
+Sign up at  
 https://developer.nytimes.com  
 
-### 3. Create a `.env` file in the same folder as your notebook
+### 3. Create a .env file in the same folder as your notebook
+You can create it manually or run this Python code:
+
+```python
+with open(".env", "w") as f:
+    f.write("NYT_API_KEY=your_key_here\n")
 ```
-NYT_API_KEY=your_key_here
-```
-**Important:** Never upload `.env` or your API key anywhere.
+
+Replace `your_key_here` with your actual New York Times API key.
 
 ### 4. Run the notebook in order
-- Part 1: Fetch & Rank Headlines  
+- Part 1: Fetch and Rank Headlines  
 - Part 2: Save to CSV (optional)  
 - Part 3: Start REST API (optional)  
 
@@ -77,7 +81,5 @@ NYT_API_KEY=your_key_here
 ## Notes
 
 - Change `date` and `limit` parameters as needed  
-- Project runs entirely on your local machine via **Jupyter Notebook**  
-- Keep your `.env` file private for security  
-
----
+- Project runs entirely on your local machine via Jupyter Notebook  
+- Keep your .env file private for security  
