@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+requests
+python-dateutil
+nest_asyncio
+python-dotenv
