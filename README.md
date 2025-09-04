@@ -6,6 +6,14 @@ This project fetches New York Times headlines for any date, ranks them by import
 - Accessible via a REST API using FastAPI
 
 ---
+## Tech Stack  
+- Python  
+- Jupyter Notebook  
+- FastAPI  
+- requests, python-dotenv, uvicorn, nest_asyncio
+  
+---
+
 
 ## Project Overview
 
