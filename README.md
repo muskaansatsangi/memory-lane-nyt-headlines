@@ -11,6 +11,7 @@ This project fetches New York Times headlines for any date, ranks them by import
 - Jupyter Notebook  
 - FastAPI  
 - requests, python-dotenv, uvicorn, nest_asyncio
+- JSON
   
 ---
 
